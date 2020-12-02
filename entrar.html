@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Entrar - IFSP - Pirituba</title>
-<script src="js/disabling.js"></script>
+  <meta charset="UTF-8">
+  <title>Entrar - IFSP - Pirituba</title>
+  <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon"> <!-- Adiciona o ícone de aba de navegador-->
+  <script src="js/disabling.js"></script>
 </head>
 <body>
-
+  
   <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
     <nav>
       <object width="100%" height="65px" data="menu.html"></object>
-
-      <img src="Imagens/Logo.jpg" alt=" " /> <!-- anexa imagem e texto alternativo-->
-       <p><h1>Entrar</h1</p> 
     </nav>
-  </header>
-
-<form>
-  <p>Usuário <input name="usuário"><br/></p>
-  Senha <input name="senha" type="password">
-</form>
-
-<footer>
-  <br><br>
-  <div id="my_menu" align="left">
   
-	<a href="https://www.facebook.com/ifsppirituba"><img src="Imagens/facebook.png" width="41" height="43" title="IFSP Facebook" alt="IFSP Facebook"></a> 
-  </div>
-  <p>
-  IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
-  </p>
-</footer>
+    <img src="Imagens/Logo.jpg" alt=" " /> <!-- anexa imagem e texto alternativo-->
+    
+  </header>
+  
+  <main> <!-- indica que é o conteúdo principal dessa página -->
+		<h1>Entrar</h1>
+        <form method="POST">
+            <div>
+                <label for="entrar-usuario">Usuário</label>
+                <input type="text" name="usuario" id="entrar-usuario" required />
+            </div>
+            <br>
+            <div>
+                <label for="entrar-senha">Senha</label>
+                <input type="password" name="senha" id="entrar-senha" required />
+            </div>
+            <br>
+            <div>
+                <button type="submit">Entrar</button>
+                <a href="#">Esqueci a senha</a>
+            </div>
+        </form>
+  </main>
+  
+  <footer>     
+      <object width="100%" height="200px" data="rodape.html"></object>
+  </footer>
 
 </body>
+
 </html>
